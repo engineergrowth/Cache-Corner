@@ -1,0 +1,115 @@
+.loginModal {
+    background: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .7);
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.loginModal h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.loginModal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loginModal input[type="text"],
+.loginModal input[type="password"],
+.loginModal input[type="email"] {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.loginModal button {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.loginModal button:hover {
+    background-color: blueviolet;
+}
+
+.loginModal .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.loginModal label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.loginModal button {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.loginModal button:hover {
+    background-color: blueviolet;
+}
+
+.loginModal .cancelButton {
+    background-color: #767676;
+    color: white;
+}
+
+.loginModal .cancelButton:hover {
+    background-color: #5a5a5a;
+}
+
+@media (max-width: 600px) {
+    .loginModal {
+        width: 100%;
+        max-width: none;
+        box-shadow: none;
+        border-radius: 0;
+        top: 30%;
+    }
+
+    .loginModal h2 {
+        font-size: 20px;
+    }
+
+    .loginModal input,
+    .loginModal button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,62 @@
+.account-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border: 3px solid rebeccapurple;
+    margin: 40px auto;
+    width: 60%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.account-info-container div,
+.account-info-container p,
+.account-info-container form {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.account-info-container h2 {
+    color: rebeccapurple;
+}
+
+.account-info-container input,
+.account-info-container button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    width: calc(100% - 20px);
+}
+
+.account-info-container button {
+    background-color: rebeccapurple;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.account-info-container button:hover {
+    background-color: blueviolet;
+}
+
+.account-info-container input[type="password"] {
+    width: calc(100% - 22px);
+}
+
+@media (max-width: 768px) {
+    .account-info-container {
+        width: 90%;
+        margin: 20px auto;
+
+        .account-info-container input,
+        .account-info-container button {
+            width: 100%;
+        }
+    }
+}

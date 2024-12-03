@@ -1,0 +1,77 @@
+.registerModal {
+    background: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .7);
+    padding: 20px;
+    width: 70%;
+    max-width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.registerModal h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.registerModal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registerModal input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.registerModal button {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.registerModal button:hover {
+    background-color: blueviolet;
+}
+
+
+@media (max-width: 600px) {
+    .registerModal {
+        width: 95%;
+        max-width: 350px;
+        top: 10%;
+        padding: 15px;
+    }
+
+    .registerModal h2 {
+        font-size: 18px;
+    }
+
+    .registerModal input,
+    .registerModal button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
